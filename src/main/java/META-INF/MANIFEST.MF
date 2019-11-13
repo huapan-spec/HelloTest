@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Main-Class: com.example.swaggerdemo.SwaggerDemoApplication
+Class-Path: commons-lang3-3.9.jar jackson-datatype-jdk8-2.10.0.jar sprin
+ g-boot-starter-tomcat-2.2.1.RELEASE.jar tomcat-embed-core-9.0.27.jar sp
+ ring-boot-autoconfigure-2.2.1.RELEASE.jar msg-simple-1.1.jar springfox-
+ spi-2.6.1.jar commons-collections4-4.1.jar uri-template-0.9.jar httpcor
+ e-4.4.12.jar swagger-models-1.5.16.jar spring-boot-starter-web-2.2.1.RE
+ LEASE.jar guava-18.0.jar spring-aop-5.2.1.RELEASE.jar spring-jcl-5.2.1.
+ RELEASE.jar spring-context-5.2.1.RELEASE.jar javaslang-2.0.5.jar jackso
+ n-module-parameter-names-2.10.0.jar spring-boot-starter-2.2.1.RELEASE.j
+ ar jackson-coreutils-1.6.jar mailapi-1.4.3.jar spring-boot-starter-logg
+ ing-2.2.1.RELEASE.jar json-patch-1.6.jar mapstruct-1.0.0.Final.jar jack
+ son-core-2.10.0.jar jboss-logging-3.4.1.Final.jar springfox-core-2.6.1.
+ jar asm-util-4.1.jar commons-io-2.4.jar swagger-annotations-1.5.10.jar 
+ springfox-schema-2.6.1.jar springfox-swagger2-2.6.1.jar httpclient-4.5.
+ 10.jar vavr-match-0.9.2.jar swagger2markup-1.3.1.jar json-schema-core-1
+ .2.1.jar spring-web-5.2.1.RELEASE.jar parboiled-java-1.1.6.jar spring-b
+ oot-starter-validation-2.2.1.RELEASE.jar swagger-parser-1.0.25.jar spri
+ ng-boot-starter-json-2.2.1.RELEASE.jar json-schema-validator-2.2.3.jar 
+ commons-codec-1.13.jar activation-1.1.jar jul-to-slf4j-1.7.29.jar commo
+ ns-collections-3.2.1.jar classmate-1.5.1.jar jopt-simple-4.6.jar parboi
+ led-core-1.1.6.jar swagger-compat-spec-parser-1.0.25.jar tomcat-embed-e
+ l-9.0.27.jar jackson-datatype-jsr310-2.10.0.jar spring-beans-5.2.1.RELE
+ ASE.jar log4j-to-slf4j-2.12.1.jar spring-plugin-metadata-1.2.0.RELEASE.
+ jar asm-4.1.jar springfox-swagger-common-2.6.1.jar vavr-0.9.2.jar log4j
+ -api-2.12.1.jar markdown_to_asciidoc-1.0.jar jackson-annotations-2.10.0
+ .jar swagger-core-1.5.16.jar jackson-dataformat-yaml-2.10.0.jar commons
+ -configuration2-2.1.jar hibernate-validator-6.0.18.Final.jar jsr305-2.0
+ .1.jar joda-time-2.10.5.jar markup-document-builder-1.1.1.jar jakarta.v
+ alidation-api-2.0.1.jar jackson-databind-2.10.0.jar slf4j-ext-1.7.29.ja
+ r asm-analysis-4.1.jar pegdown-1.4.2.jar spring-plugin-core-1.2.0.RELEA
+ SE.jar snakeyaml-1.25.jar slf4j-api-1.7.29.jar spring-boot-2.2.1.RELEAS
+ E.jar commons-logging-1.2.jar spring-webmvc-5.2.1.RELEASE.jar tomcat-em
+ bed-websocket-9.0.27.jar libphonenumber-6.0.jar springfox-spring-web-2.
+ 6.1.jar jakarta.annotation-api-1.3.5.jar asm-tree-4.1.jar javaslang-mat
+ ch-2.0.5.jar spring-core-5.2.1.RELEASE.jar commons-beanutils-1.9.2.jar 
+ rhino-1.7R4.jar validation-api-2.0.1.Final.jar btf-1.2.jar spring-expre
+ ssion-5.2.1.RELEASE.jar paleo-core-0.10.2.jar springfox-swagger-ui-2.6.
+ 1.jar logback-classic-1.2.3.jar logback-core-1.2.3.jar
+

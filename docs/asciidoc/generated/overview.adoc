@@ -1,0 +1,35 @@
+= springboot结合swagger2构建Restful API
+
+
+[[_overview]]
+== 概览
+这是一个swagger2小型demo
+
+
+=== 版本信息
+[%hardbreaks]
+__版本__ : 0.0.1
+
+
+=== 联系方式
+[%hardbreaks]
+__名字__ : bacyang
+
+
+=== 许可信息
+[%hardbreaks]
+__服务条款__ : www.baidu.com
+
+
+=== URI scheme
+[%hardbreaks]
+__域名__ : localhost:8080
+__基础路径__ : /
+
+
+=== 标签
+
+* user-controller : User Controller
+
+
+
