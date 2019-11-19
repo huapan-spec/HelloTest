@@ -1,0 +1,284 @@
+
+h2. 资源 {anchor:paths}
+
+h3. User-controller {anchor:user-controller_resource}
+User Controller
+
+
+h4. 创建用户 {anchor:postuserusingpost}
+{noformat}
+POST /users
+{noformat}
+
+
+h5. 说明
+根据user对象创建用户
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Body*|*user*\\ \\ _必填_||用户详情实体类||[User|#user]|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||string|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/users
+{code}
+
+
+h6. 请求 body
+{code:language=json}
+{
+  "age" : 0,
+  "id" : 0,
+  "name" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"string"
+{code}
+
+
+h4. 获取用户列表 {anchor:getlistusingget}
+{noformat}
+GET /users
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||< [User|#user] > array|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/users
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+[ {
+  "age" : 0,
+  "id" : 0,
+  "name" : "string"
+} ]
+{code}
+
+
+h4. 获取用户详情 {anchor:getuserbyidusingget}
+{noformat}
+GET /users/{id}
+{noformat}
+
+
+h5. 说明
+根据url的id来获取用户基本信息
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Path*|*id*\\ \\ _必填_||用户id||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[User|#user]|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/users/0
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "age" : 0,
+  "id" : 0,
+  "name" : "string"
+}
+{code}
+
+
+h4. 更新用户信息 {anchor:putuserusingput}
+{noformat}
+PUT /users/{id}
+{noformat}
+
+
+h5. 说明
+根据url的id来指定对象，并且根据传过来的user进行用户基本信息更新
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Path*|*id*\\ \\ _必填_||用户id||integer (int64)|
+|*Body*|*user*\\ \\ _必填_||用户详情实体类user||[User|#user]|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||string|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/users/0
+{code}
+
+
+h6. 请求 body
+{code:language=json}
+{
+  "age" : 0,
+  "id" : 0,
+  "name" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"string"
+{code}
+
+
+h4. 删除用户 {anchor:deluserusingdelete}
+{noformat}
+DELETE /users/{id}
+{noformat}
+
+
+h5. 说明
+根据url的id来指定对象，进行用户信息删除
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Path*|*id*\\ \\ _必填_||用户id||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||string|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/users/0
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"string"
+{code}
+
+
+

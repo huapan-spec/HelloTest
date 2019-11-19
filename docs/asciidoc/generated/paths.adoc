@@ -1,0 +1,330 @@
+
+[[_paths]]
+== 资源
+
+[[_user-controller_resource]]
+=== User-controller
+User Controller
+
+
+[[_postuserusingpost]]
+==== 创建用户
+....
+POST /users
+....
+
+
+===== 说明
+根据user对象创建用户
+
+
+===== 参数
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|类型|名称|说明|类型
+|**Body**|**user** +
+__必填__|用户详情实体类|<<_user,User>>
+|===
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|string
+|**201**|Created|无内容
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|**404**|Not Found|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `*/*`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/users
+----
+
+
+====== 请求 body
+[source,json]
+----
+{
+  "age" : 0,
+  "id" : 0,
+  "name" : "string"
+}
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+"string"
+----
+
+
+[[_getlistusingget]]
+==== 获取用户列表
+....
+GET /users
+....
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|< <<_user,User>> > array
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|**404**|Not Found|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `*/*`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/users
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+[ {
+  "age" : 0,
+  "id" : 0,
+  "name" : "string"
+} ]
+----
+
+
+[[_getuserbyidusingget]]
+==== 获取用户详情
+....
+GET /users/{id}
+....
+
+
+===== 说明
+根据url的id来获取用户基本信息
+
+
+===== 参数
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|类型|名称|说明|类型
+|**Path**|**id** +
+__必填__|用户id|integer (int64)
+|===
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|<<_user,User>>
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|**404**|Not Found|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `*/*`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/users/0
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+{
+  "age" : 0,
+  "id" : 0,
+  "name" : "string"
+}
+----
+
+
+[[_putuserusingput]]
+==== 更新用户信息
+....
+PUT /users/{id}
+....
+
+
+===== 说明
+根据url的id来指定对象，并且根据传过来的user进行用户基本信息更新
+
+
+===== 参数
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|类型|名称|说明|类型
+|**Path**|**id** +
+__必填__|用户id|integer (int64)
+|**Body**|**user** +
+__必填__|用户详情实体类user|<<_user,User>>
+|===
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|string
+|**201**|Created|无内容
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|**404**|Not Found|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `*/*`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/users/0
+----
+
+
+====== 请求 body
+[source,json]
+----
+{
+  "age" : 0,
+  "id" : 0,
+  "name" : "string"
+}
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+"string"
+----
+
+
+[[_deluserusingdelete]]
+==== 删除用户
+....
+DELETE /users/{id}
+....
+
+
+===== 说明
+根据url的id来指定对象，进行用户信息删除
+
+
+===== 参数
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|类型|名称|说明|类型
+|**Path**|**id** +
+__必填__|用户id|integer (int64)
+|===
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|string
+|**204**|No Content|无内容
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `*/*`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/users/0
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+"string"
+----
+
+
+
